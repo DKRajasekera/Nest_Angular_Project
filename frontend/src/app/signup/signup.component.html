@@ -1,0 +1,64 @@
+<div class="container">
+
+    <div class="card">
+
+        <h1>Registration Form</h1>
+
+        <form #myForm="ngForm" (ngSubmit)="doRegistration(myForm.value)">
+
+
+            <p>
+                <mat-form-field appearance="outline" class="field">
+                  <mat-label>First Name</mat-label>
+                  <input type="text" name="fname" [(ngModel)]="data.fname" matInput placeholder="Enter First Name">
+                </mat-form-field>
+              </p>
+
+              <p>
+                <mat-form-field appearance="outline" class="field">
+                  <mat-label>Last Name</mat-label>
+                  <input type="text" name="lname" [(ngModel)]="data.lname" matInput placeholder="Enter Last Name">
+                </mat-form-field>
+              </p>
+
+              <p>
+                <mat-form-field appearance="outline" class="field">
+                  <mat-label>Department</mat-label>
+                  <input type="text" name="dep" [(ngModel)]="data.dep" matInput placeholder="Enter Department">
+                </mat-form-field>
+              </p>
+
+              <p>
+                <mat-form-field appearance="outline" class="field">
+                  <mat-label>Date Of Birth</mat-label>
+                  <input type="text" name="dob" [(ngModel)]="data.dob" matInput placeholder="DD/MM/YYYY">
+                </mat-form-field>
+              </p>
+
+              <p>
+                <mat-form-field appearance="outline" class="field">
+                  <mat-label>Email</mat-label>
+                  <input type="email" name="mail" [(ngModel)]="data.mail" matInput placeholder="John@example.com">
+                </mat-form-field>
+              </p>
+
+              <p>
+                <mat-form-field appearance="outline" class="field">
+                  <mat-label>Password</mat-label>
+                  <input type="password" name="pw" [(ngModel)]="data.pw" matInput placeholder="Enter Password">
+                </mat-form-field>
+              </p>
+
+              <div class="send">
+                <button type="submit" mat-raised-button color="primary">Register</button>
+                <button type="reset" mat-raised-button color="accent">Reset</button>
+              </div>
+             
+                
+
+
+        </form>
+
+    </div>
+
+</div>
